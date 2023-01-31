@@ -158,8 +158,8 @@ async def short(link):
     if SHORTCM_API:
         try:
             s = Shortener(api_key=SHORTCM_API)
-            url = s.shortcm.short(link)
-            shorten_urls += f"\n**Short.cm :-** {url}"
+            url = s.shortio.short(link)
+            shorten_urls += f"\n**Short.io :-** {url}"
         except Exception as error:
             print(f"Short.cm error :- {error}")
     
